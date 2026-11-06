@@ -500,3 +500,9 @@ main{max-width:none;margin:0}
 .toc-sub .pg.cont::before{content:none}
 /* Keep the full PDF label on small screens as well. */
 @media(max-width:819px){.dl .dl-txt-long{display:inline}.dl{max-width:calc(100vw - 32px);font-size:10px;letter-spacing:1.3px;gap:8px}.dl .dl-ico{flex:none}}
+
+/* Keep distribution values visible above animated bars. */
+#exhibit-5 .f-col-mark{clip-path:none!important;overflow:visible;z-index:3}
+#exhibit-5 .f-col-value{display:block;visibility:visible;opacity:1;z-index:5;white-space:nowrap}
+/* Do not clip labels and significance markers outside the bar in animated charts. */
+#exhibit-15 .f-col-mark{clip-path:none!important;overflow:visible}
